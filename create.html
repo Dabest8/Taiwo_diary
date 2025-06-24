@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="properties/css/main.css" />
+
+    <title>My Dairy | Create</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="./dashboard.html">
+          <div class="logo">
+            <img
+              src="./properties/symbols/diary-image.png"
+              alt=""
+              srcset=""
+            />My Diary
+          </div>
+        </a>
+        <p class="dashboard-msg">
+          You are welcome, <span id="user_email"></span>!
+        </p>
+        <div class="dashboard-action">
+          <a href="./dashboard.html" class="btn btn-primary-outline"> Home</a>
+          <a href="./create.html" class="btn btn-primary"> Add New Entry</a>
+          <a href="#0" class="btn btn-primary-outline" onclick="logout()">
+            EXIT</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <form action="" class="diary-entry-form">
+          <h1>Add New Diary Entry</h1>
+          <p>Fill in your details below to create a new diary entry.</p>
+          <label for="title">Title</label><br />
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Entry title"
+            required
+          /><br />
+          <label for="content">Content</label><br />
+          <textarea
+            id="content"
+            name="content"
+            placeholder="Write your diary entry here..."
+            rows="8"
+            required
+          ></textarea>
+          <br />
+          <button type="submit" class="btn btn-primary">
+            Save
+            <span id="btnLoader" class="loader" style="display: none"></span>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Copyright. My Diary 2025.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="./properties/js/create.js"></script>
+    <script src="./properties/js/logout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="prperties/css/main.css" />
+
+    <title>My Dairy | Dashbooard</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="./dashboard.html">
+          <div class="logo">
+            <img
+              src="./properties/symbols/diary-image.png"
+              alt=""
+              srcset=""
+            />My Diary
+          </div>
+        </a>
+        <p class="dashboard-msg">
+          You are welcome, <span id="user_email"></span>!
+        </p>
+        <div class="dashboard-action">
+          <a href="./dashboard.html" class="btn btn-primary-outline"> Home</a>
+          <a href="./create.html" class="btn btn-primary"> Add New Entry</a>
+          <a href="#0" class="btn btn-primary-outline" onclick="logout()">
+            Logout</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      ​
+      <div id="loaderOverlay" class="loader-overlay">
+        <div class="spinner"></div>
+      </div>
+
+      <section class="content">
+        <h1 class="dashboard-title">My Diary Entries</h1>
+
+        <div class="diary-list" id="diary_list"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Copyright. My Diary 2025.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="./properties/js/getEntries.js"></script>
+    <script src="./properties/js/delete.js"></script>
+    <script src="./properties/js/logout.js"></script>
+  </body>
+</html>
