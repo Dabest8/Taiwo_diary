@@ -1,0 +1,41 @@
+.btn {
+  margin: 1rem;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  opacity: 0.80;
+  background-color: #640d23;
+}
+
+.btn-primary-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-primary-outline:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-danger-outline {
+  border: 3px solid rgb(39, 4, 94);
+  color: red;
+}
+
+.btn-danger-outline:hover {
+  background-color: red;
+  color: #ca1c2b;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #064b31;
+  color: #fff;
+}
